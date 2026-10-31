@@ -8,6 +8,7 @@ connectDB();
 const app = express();                 // 3. create the server
 app.use(cors());                       // allow the React app to call us
 app.use(express.json());               // understand JSON sent to us
+app.use("/api/auth", require("./routes/auth"));
 
 // 4. A route: when someone visits /api/health, reply with JSON
 app.get("/api/health", (req, res) => {
