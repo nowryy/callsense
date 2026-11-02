@@ -35,3 +35,42 @@ body {
 .error {
   color: #c92a2a;
 }
+.card.wide {
+  max-width: 900px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button.small {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+audio {
+  height: 32px;
+  max-width: 220px;
+}
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  background: #e9ecef;
+}
+.badge.queued { background: #fff3bf; }
+.badge.transcribing,
+.badge.analyzing,
+.badge.checking_policy { background: #d0ebff; }
+.badge.done { background: #d3f9d8; }
+.badge.failed { background: #ffc9c9; }
